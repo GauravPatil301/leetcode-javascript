@@ -1,7 +1,21 @@
-// A javascript Program to find a peak element
 
-// Find the peak element in the array
+# Project Title
 
+## A javascript Program to find a peak element
+
+### Find the peak element in the array
+
+Problem Statement
+
+    Input: array[] = { 5, 10, 20, 15}
+    output: 20
+
+    Explanation: The element 20 has neighbors 10 and 15, both of them are less than 20.
+
+
+Code:
+
+```
 // Driver Code 
 let arr = [1, 3, 20, 4, 1, 0];
 let n = arr.length;
@@ -20,11 +34,4 @@ function findPeak(arr,n) {
         if(arr[i] >= arr[i-1] && arr[i] >= arr[i+1]) return i;      
     }
 }
-
-/*
-    Input: array[] = { 5, 10, 20, 15}
-    output: 20
-
-    Explanation: The element 20 has neighbors 10 and 15, both of them are less than 20.
-
-*/
+```
